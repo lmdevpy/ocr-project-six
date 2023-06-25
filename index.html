@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Just Stream It</title>
+</head>
+<body>
+      <header id="navbar">
+        <div class="navbar__logo">
+          <a href="index.html"><img alt="JustStreamIt logo" src="juststreamit.png"></a>
+        </div>
+        <nav class="navbar__menu">
+          <ul>
+            <li class="navbar__item"><a href="#">Home</a></li>
+            <li class="navbar__item"><a href="#categories">Categories</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <section id="banner">
+        <div id="banner__movie">
+          <h1 id="banner__title"></h1>
+        </div>
+        <div class="buttons">
+          <button class="button"> Play</button>
+          <button aria-label="open modal" id="button__modal">More info</button>
+        </div>
+        <p id="banner__desc">
+
+        </p>
+      </section>
+
+      <section id="categories">
+        <div id="best__movies">
+          <button class="prev__button">Précédent</button>
+          <button class="next__button">Suivant</button>
+          <h2>Films les mieux notés</h2>
+        </div>
+        <div id="adventure">
+          <button class="prev__button">Précédent</button>
+          <button class="next__button">Suivant</button>
+          <h2>Aventure</h2>
+        </div>
+        <div id="animation">
+          <button class="prev__button">Précédent</button>
+          <button class="next__button">Suivant</button>
+          <h2>Documentaire</h2>
+        </div>
+        <div id="western">
+          <button class="prev__button">Précédent</button>
+          <button class="next__button">Suivant</button>
+          <h2>Western</h2>
+        </div>
+      </section>
+      
+      <div id="modal">
+        <div class="modal__content">
+          <span aria-label="close modal" id="close">&times;</span>
+          <div class="modal__cover-image">
+            <img alt="movie cover" id="modal__cover" src="">
+          </div>
+          <div class="modal__movie__info">
+            <header class="modal__header">
+              <h3 id="modal__title"></h3>
+              <button class="modal__button">Play</button>
+            </header>
+            <div class="modal__metadata">
+              <p>Release year: </p>
+              <p id="modal__year"></p>
+              <p id="modal__rating"></p>
+              <p>Duration: </p>
+              <p id="modal__duration"></p><br>
+              <p>Genres: </p>
+              <p id="modal__genres"></p><br>
+              <p>IMDb Score: </p>
+              <p id="modal__imdb"></p><br><br>
+              <p>Synopsis: </p>
+              <p id="modal__desc"></p>
+            </div>
+            <div>
+              <p>Directed by: </p>
+              <p id="modal__directors"></p><br>
+              <p>Starring: </p>
+              <p id="modal__cast"></p><br>
+              <p>Countries: </p>
+              <p id="modal__country"></p><br>
+              <p>Box office: </p>
+              <p id="modal__income"></p><br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script src="main.js"></script>
+      </body>
+      </html>
